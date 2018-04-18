@@ -15,18 +15,6 @@ M = 1000;
 G=10;
 double m, x= 100, v =0, dt= 100.0/2000000.0;
 
-/*
-//ingreso de datos: 
-cout<<"Ingrese la masa m:"<<endl;
-cin>>m;
-cout<<"Ingrese la posicion inicial x:"<<endl;
-cin>>x;
-cout<<"Ingrese la velocidad inicial v:"<<endl;
-cin>>v;
-cout<<"Ingrese dt"<<endl;
-cin>>dt;
-*/
-
 double xf=0.01*x, t = 0, kx1, kx2, kx3, kx4, kv1, kv2, kv3, kv4;
 int Nmax=2000000, i = 0;
 

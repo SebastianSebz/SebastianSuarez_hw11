@@ -28,7 +28,7 @@ int Nmax=2000000, i = 0;
 	
 while(x>xf && i<Nmax){
 
-	kx1 =x punto(x,v);
+	kx1 = xpunto(x,v);
 	kv1 = vpunto(x,v);
 	kx2 = xpunto(x+kx1*dt/2, v+kv1*dt/2);
 	kv2 = vpunto(x+kx1*dt/2, v+kv1*dt/2);
@@ -40,7 +40,7 @@ while(x>xf && i<Nmax){
 	t= t + dt;
 	x= x + dt*(kx1+2*kx2+2*kx3+kx4)/6;
 	v= v + dt*(kv1+2*kv2+2*kv3+kv4)/6;
-	cout << x << " " << v << " " << t< < " " << endl;
+	cout << x << " " << v << " " << t << " " << endl;
 	i++;}
 
 return 0;}
